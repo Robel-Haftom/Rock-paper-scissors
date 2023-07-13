@@ -52,24 +52,24 @@ function checkWinner(playerMove, computerMoveIcon){
        playerMove == paper && computerMoveIcon == rock ||
        playerMove == scissor && computerMoveIcon == paper
     ){
-        whoWins = "You win! ";
+        whoWins = `<span class="player-score">You win!</span> ${playerMove} beats ${computerMoveIcon}`;
         playerScore ++;
         return whoWins;
     } else if( playerMove == rock && computerMoveIcon == paper ||
         playerMove == paper && computerMoveIcon == scissor ||
         playerMove == scissor && computerMoveIcon == rock){
-        whoWins = "Computer win! ";
+        whoWins = `<span class="computer-score">Computer win!</span> ${computerMoveIcon} beats ${playerMove}`;
         computerScore ++;
         return whoWins;
     } else if(playerMove == computerMoveIcon){
-        whoWins = "Tie";
+        whoWins = `<span class="tie-score"> It's a Tie</span>`;
         tieScore ++;
         return whoWins;
     }
 }
 
 function screenUpdate(playerMove, computerMoveIcon, whoWon){
-    whoWin.innerText = `${whoWon} ${playerMove} ${computerMoveIcon}`;
+    whoWin.innerHTML = `${whoWon}`;
     score.innerHTML = `<p>
     Your Win: <span class="player-score">
     ${playerScore}</span>
