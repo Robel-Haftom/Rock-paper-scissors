@@ -1,0 +1,61 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    font-family: fantasy;
+}
+
+p{
+    font-size: 28px;
+    margin: 15px;
+}
+img{
+    width: 60px;
+    height: 60px;
+}
+
+.display{
+    margin-top: 60px;
+}
+
+.upper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.title{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.move-icons img{
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border: none;
+    border-radius: 30px;
+    margin: 5px 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 3px black;
+    cursor: pointer;
+}
+
+.rock:hover,
+.paper:hover,
+.scissor:hover{
+    transform: scale(0.98);
+}
+
+.rock{
+    background-color: green;
+}
+.paper{
+    background-color: yellow;
+}
+.scissor{
+    background-color: red;
+}
+
