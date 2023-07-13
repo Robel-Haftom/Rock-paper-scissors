@@ -53,9 +53,24 @@ img{
     background-color: green;
 }
 .paper{
-    background-color: yellow;
+    background-color: rgb(170, 170, 12);
 }
 .scissor{
     background-color: red;
 }
 
+.score{
+    
+    font-size: 28px;
+    margin: 15px;
+}
+
+.player-score{
+    color: green;
+}
+.tie-score{
+    color: blue;
+}
+.computer-score{
+    color: red;
+}

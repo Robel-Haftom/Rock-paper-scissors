@@ -70,5 +70,13 @@ function checkWinner(playerMove, computerMoveIcon){
 
 function screenUpdate(playerMove, computerMoveIcon, whoWon){
     whoWin.innerText = `${whoWon} ${playerMove} ${computerMoveIcon}`;
-    score.innerText = `Your Win: ${playerScore}   Tie: ${tieScore}        Computer Win: ${computerScore}`;
+    score.innerHTML = `<p>
+    Your Win: <span class="player-score">
+    ${playerScore}</span>
+    Tie: <span class="tie-score">
+    ${tieScore}</span>
+    Computer Win: <span class="computer-score">
+    ${computerScore}</span>`;
+
 }
+
